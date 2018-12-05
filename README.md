@@ -84,7 +84,7 @@ $text = (new Doc())
 or as the third parameter to the `getText` static method:
 
 ```php
-echo Doc::getText('book.doc', null, ['layout', 'opw myP1$$Word']);
+echo Doc::getText('book.doc', null, ['f', 'w 80']);
 ```
 
 ## Change log
