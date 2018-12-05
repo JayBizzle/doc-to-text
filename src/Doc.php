@@ -16,7 +16,7 @@ class Doc
 
     public function __construct(string $binPath = null)
     {
-        $this->binPath = $binPath ?? '/usr/local/bin/antiword';
+        $this->binPath = $binPath ?? '/usr/bin/antiword';
     }
 
     public function setDoc(string $doc) : self
