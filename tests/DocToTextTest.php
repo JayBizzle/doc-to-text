@@ -2,10 +2,10 @@
 
 namespace Jaybizzle\DocToText\Test;
 
-use PHPUnit\Framework\TestCase;
+use Jaybizzle\DocToText\Doc;
 use Jaybizzle\DocToText\Exceptions\CouldNotExtractText;
 use Jaybizzle\DocToText\Exceptions\DocNotFound;
-use Jaybizzle\DocToText\Doc;
+use PHPUnit\Framework\TestCase;
 
 class DocToTextTest extends TestCase
 {
