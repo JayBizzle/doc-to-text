@@ -76,7 +76,7 @@ Sometimes you may want to use [antiword options](https://linux.die.net/man/1/ant
 ```php
 $text = (new Doc())
     ->setDoc('table.doc')
-    ->setOptions(['layout', 'r 96'])
+    ->setOptions(['f', 'w 80'])
     ->text()
 ;
 ```
