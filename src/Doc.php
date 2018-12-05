@@ -66,7 +66,6 @@ class Doc
         return (new static($binPath))
             ->setOptions($options)
             ->setDoc($doc)
-            ->text()
-        ;
+            ->text();
     }
 }
