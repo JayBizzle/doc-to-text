@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jaybizzle/doc-to-text.svg?style=flat-square)](https://packagist.org/packages/jaybizzle/doc-to-text)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/jaybizzle/doc-to-text/master.svg?style=flat-square)](https://travis-ci.org/jaybizzle/doc-to-text)
+[![Build Status](https://img.shields.io/travis/JayBizzle/doc-to-text/master.svg?style=flat-square)](https://travis-ci.org/jaybizzle/doc-to-text)
 [![Quality Score](https://img.shields.io/scrutinizer/g/jaybizzle/doc-to-text.svg?style=flat-square)](https://scrutinizer-ci.com/g/jaybizzle/doc-to-text)
 [![Total Downloads](https://img.shields.io/packagist/dt/jaybizzle/doc-to-text.svg?style=flat-square)](https://packagist.org/packages/jaybizzle/doc-to-text)
 
