@@ -2,7 +2,10 @@
     "name": "jaybizzle/doc-to-text",
     "description": "Extract text from a Word Doc",
     "keywords": [
-        "jaybiizle",
+        "word",
+        "doc",
+        "text",
+        "extract",
         "doc-to-text"
     ],
     "homepage": "https://github.com/jaybizzle/doc-to-text",
