@@ -18,7 +18,7 @@ echo Doc::getText('book.doc'); // returns the text from the doc
 
 ## Requirements
 
-Behind the scenes this package leverages [antiword](https://en.wikipedia.org/wiki/Antiword). You can verify if the binary installed on your system by issuing this command:
+Behind the scenes this package leverages [antiword](https://en.wikipedia.org/wiki/Antiword). You can verify if the binary is installed on your system by issuing this command:
 
 ```bash
 which antiword
