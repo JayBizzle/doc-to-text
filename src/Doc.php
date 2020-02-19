@@ -19,7 +19,7 @@ class Doc
         $this->binPath = $binPath ?? '/usr/bin/antiword';
     }
 
-    public function setDoc(string $doc) : self
+    public function setDoc(string $doc): self
     {
         if (!is_readable($doc)) {
             throw new DocNotFound(sprintf('could not find or read doc `%s`', $doc));
@@ -30,9 +30,9 @@ class Doc
         return $this;
     }
 
-    public function setOptions(array $options) : self
+    public function setOptions(array $options): self
     {
-        $mapper = function (string $content) : array {
+        $mapper = function (string $content): array {
             $content = trim($content);
             if ('-' !== ($content[0] ?? '')) {
                 $content = '-'.$content;
@@ -41,7 +41,7 @@ class Doc
             return explode(' ', $content, 2);
         };
 
-        $reducer = function (array $carry, array $option) : array {
+        $reducer = function (array $carry, array $option): array {
             return array_merge($carry, $option);
         };
 
@@ -50,7 +50,7 @@ class Doc
         return $this;
     }
 
-    public function text() : string
+    public function text(): string
     {
         $process = new Process(array_merge([$this->binPath], $this->options, [$this->doc]));
         $process->run();
@@ -61,7 +61,7 @@ class Doc
         return trim($process->getOutput(), " \t\n\r\0\x0B\x0C");
     }
 
-    public static function getText(string $doc, string $binPath = null, array $options = []) : string
+    public static function getText(string $doc, string $binPath = null, array $options = []): string
     {
         return (new static($binPath))
             ->setOptions($options)
