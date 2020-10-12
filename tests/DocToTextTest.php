@@ -52,7 +52,7 @@ class DocToTextTest extends TestCase
             ->setOptions(['f', 'i 80'])
             ->text();
 
-        $this->assertContains($this->dummyDocText, $text);
+        $this->assertStringContainsString($this->dummyDocText, $text);
     }
 
     /** @test */
@@ -63,7 +63,7 @@ class DocToTextTest extends TestCase
             ->setOptions(['-f', '-i 08'])
             ->text();
 
-        $this->assertContains($this->dummyDocText, $text);
+        $this->assertStringContainsString($this->dummyDocText, $text);
     }
 
     /** @test */
@@ -74,7 +74,7 @@ class DocToTextTest extends TestCase
             ->setOptions(['-f', 'i 80'])
             ->text();
 
-        $this->assertContains($this->dummyDocText, $text);
+        $this->assertStringContainsString($this->dummyDocText, $text);
     }
 
     /** @test */
