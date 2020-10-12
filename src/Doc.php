@@ -16,12 +16,12 @@ class Doc
 
     public function __construct(string $binPath = null)
     {
-        $this->binPath = $binPath ?? '/usr/bin/antiword';
+        $this->binPath = $binPath ?? '/usr/local/bin/antiword';
     }
 
     public function setDoc(string $doc) : self
     {
-        if (!is_readable($doc)) {
+        if (! is_readable($doc)) {
             throw new DocNotFound(sprintf('could not find or read doc `%s`', $doc));
         }
 
@@ -54,7 +54,7 @@ class Doc
     {
         $process = new Process(array_merge([$this->binPath], $this->options, [$this->doc]));
         $process->run();
-        if (!$process->isSuccessful()) {
+        if (! $process->isSuccessful()) {
             throw new CouldNotExtractText($process);
         }
 
